@@ -23,8 +23,7 @@ a {
   color: #222;
 }
 
-/* 悬浮时变色 */
-.hover:hover, a:hover {
+a:hover {
   color: #40a9ff;
 }
 
@@ -38,11 +37,6 @@ ul, li {
 /* 图片：避免超出父容器 */
 img {
   max-width: 100%;
-}
-
-hr {
-  height: 0;
-  opacity: 0.3;
 }
 
 /* 行布局：不换行、默认左对齐 */
@@ -71,6 +65,118 @@ hr {
   gap: 10px;
 }
 
+/* justify-content: 定义主轴上项目的排列规则 */
+/* 主轴方向：起点对齐（默认） */
+.justify-start {
+  justify-content: flex-start;
+}
+
+/* 主轴方向：两端对齐 */
+.justify-between {
+  justify-content: space-between;
+}
+
+/* 主轴方向：居中对齐 */
+.justify-center {
+  justify-content: center;
+}
+
+/* 主轴方向：终点对齐 */
+.justify-end {
+  justify-content: flex-end;
+}
+
+/* 主轴方向：包围对齐 */
+.justify-around {
+  justify-content: space-around;
+}
+
+
+/* align-items: 定义交叉轴上项目的排列规则 */
+/* 交叉轴方向：两端对齐（默认） */
+.align-stretch {
+  align-items: stretch;
+}
+
+/* 交叉轴方向：起点对齐 */
+.align-start {
+  align-items: flex-start;
+}
+
+/* 交叉轴方向：中线对齐 */
+.align-center {
+  align-items: center;
+}
+
+/* 交叉轴方向：终点对齐 */
+.align-end {
+  align-items: flex-end;
+}
+
+/* 交叉轴方向：与第一行文字的基线对齐 */
+.align-baseline {
+  align-items: baseline;
+}
+
+
+/* 垂直方向：指定项目起点对齐 */
+.align-self-start {
+  align-self: flex-start;
+}
+
+/* 垂直方向：指定项目居中对齐 */
+.align-self-center {
+  align-self: center;
+}
+
+/* 垂直方向：指定项目与第一行文字的基线对齐 */
+.align-self-baseline {
+  align-self: baseline;
+}
+
+/* 垂直方向：指定项目终点对齐 */
+.align-self-start {
+  align-self: flex-end;
+}
+
+/* 垂直方向：指定项目两端对齐（默认） */
+.align-self-stretch {
+  align-self: stretch;
+}
+
+
+/* align-content: 定义交叉轴方向有多行时：行（列）与行（列）间的对齐方式 */
+/* 交叉轴方向：行（列）间两端对齐 */
+.aligin-content-stretch {
+  align-content: stretch;
+}
+
+/* 交叉轴方向：行（列）间起点对齐 */
+.aligin-content-start {
+  align-content: flex-start;
+}
+
+/* 交叉轴方向：行（列）间居中对齐 */
+.aligin-content-center {
+  align-content: center;
+}
+
+/* 交叉轴方向：行（列）间终点对齐 */
+.aligin-content-end {
+  align-content: flex-end;
+}
+
+/* 交叉轴方向：行（列）间两端对齐 */
+.aligin-content-between {
+  align-content: space-between;
+}
+
+/* 交叉轴方向：行（列）间包围对齐 */
+.aligin-content-around {
+  align-content: space-around;
+}
+
+
 /* 作者：粗体、灰色文字 */
 .author {
   font-weight: bold;
@@ -81,27 +187,23 @@ hr {
 .post-title {
   font-weight: bold;
   color: #333;
-  line-height: 2;
 }
 
 /* 内容：深色文字 */
 .post-content {
   color: #222;
   word-break: break-word;
-  line-height: 1.8;
 }
 
 /* 描述：浅色文字 */
 .post-description {
   color: #555;
   word-break: break-word;
-  line-height: 1.8;
 }
 
 /* 额外信息：更浅色文字 */
 .post-extra {
   color: #ccc;
-  line-height: 1.5;
 }
 
 /* 文本：一行，溢出部分不显示 */
@@ -119,15 +221,19 @@ hr {
   white-space: normal;
 }
 
-/* 填充剩余的宽度（需要父元素布局为flex） */
-.width-fill-remain {
-  width: 0;
-  flex: 1 0 auto;
+/* 宽度：和父容器等宽（100%） */
+.width-100per {
+  width: 100%;
 }
 
 /* 该元素右对齐 */
 .put-right {
   margin-left: auto;
+}
+
+/* 可滚动：该元素的高度需可计算到值 */
+.scrollable {
+  overflow: auto;
 }
 
 /* 滚动中需要固定在顶部的元素 */
