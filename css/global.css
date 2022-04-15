@@ -147,32 +147,32 @@ img {
 
 /* align-content: 定义交叉轴方向有多行时：行（列）与行（列）间的对齐方式 */
 /* 交叉轴方向：行（列）间两端对齐 */
-.aligin-content-stretch {
+.align-content-stretch {
   align-content: stretch;
 }
 
 /* 交叉轴方向：行（列）间起点对齐 */
-.aligin-content-start {
+.align-content-start {
   align-content: flex-start;
 }
 
 /* 交叉轴方向：行（列）间居中对齐 */
-.aligin-content-center {
+.align-content-center {
   align-content: center;
 }
 
 /* 交叉轴方向：行（列）间终点对齐 */
-.aligin-content-end {
+.align-content-end {
   align-content: flex-end;
 }
 
 /* 交叉轴方向：行（列）间两端对齐 */
-.aligin-content-between {
+.align-content-between {
   align-content: space-between;
 }
 
 /* 交叉轴方向：行（列）间包围对齐 */
-.aligin-content-around {
+.align-content-around {
   align-content: space-around;
 }
 
